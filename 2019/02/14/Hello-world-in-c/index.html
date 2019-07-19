@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
   <title>hello world in c++ | Jack Chen</title>
@@ -14,14 +14,14 @@
   <meta name="description" content="When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right now and start our c++ trip! By the way, c++ file extention can">
 <meta name="keywords" content="helloworld,c++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World In C++">
-<meta property="og:url" content="http://yoursite.com/2019/02/14/Hello-world-in-c/index.html">
+<meta property="og:title" content="Hello World in C++">
+<meta property="og:url" content="https://850075610.github.io/2019/02/14/Hello-world-in-c/index.html">
 <meta property="og:site_name" content="Jack Chen">
 <meta property="og:description" content="When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right now and start our c++ trip! By the way, c++ file extention can">
-<meta property="og:locale" content="eng">
+<meta property="og:locale" content="eng, zh-CN">
 <meta property="og:updated_time" content="2019-02-18T14:05:13.744Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World In C++">
+<meta name="twitter:title" content="Hello World in C++">
 <meta name="twitter:description" content="When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right now and start our c++ trip! By the way, c++ file extention can">
   
     <link rel="alternate" href="/atom.xml" title="Jack Chen" type="application/atom+xml">
@@ -92,7 +92,8 @@
 
             
               <a class="brand" style="
-                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
               </a>
             
@@ -113,14 +114,14 @@
                   <li><div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -147,7 +148,7 @@
 <script src="/js/insight.js"></script>
 
 </div></li>
-            </ul></div>
+            </div>
           </div>
                 
       </div>
@@ -161,15 +162,15 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Hello-world-in-c" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+          <section id="main" style="float:none;"><article id="post-Hello-world-in-c" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" itemprop="name">
-      Hello World In C++
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Hello World in C++
     </h1>
   
 
@@ -199,19 +200,28 @@
         <p>When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right now and start our c++ trip! By the way, c++ file extention can be either .cc or .cpp. In the following example we use .cpp extension.</p>
 <p>‘helloworld.cpp’</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;	</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>Explanation:</p>
-<p>In order to use standard output stream cout, we need<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>Let’s ignore<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure></p>
+<p>In order to use standard output stream cout, we need </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>Let’s ignore</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure>
+
 <p>for now.</p>
 <p>If you’ve got any programming experience, the main() method is quite easy, as the entry of the program, it tells the program where it should start.</p>
 <p>Now comes our task: <strong>print out “Hello World!”</strong></p>
 <p>It was realized through <strong>standard output stream cout</strong>, as we metioned before.</p>
 <p><strong>endl</strong> means ending this line and the cursor will change to the next line.</p>
 <p><strong>Announcement: all programs are compiled and executed under ubuntu 18.04 for the moment.</strong></p>
-<p>Compile command:<br><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ g++ helloworld.cpp -o helloworld</span><br></pre></td></tr></table></figure></p>
+<p>Compile command: </p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ g++ helloworld.cpp -o helloworld</span><br></pre></td></tr></table></figure>
+
+
 <p><strong>-o</strong> parameter is for the name of the generated object file ( helloworld in the above command).</p>
 <p>Run:</p>
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./helloworld</span><br></pre></td></tr></table></figure>
+
 <p><strong>Time to have a try by yourself right now!</strong></p>
 
       
@@ -222,11 +232,11 @@
       <div>
         <ul class="post-copyright">
           <li class="post-copyright-author">
-          <strong>Post author:  </strong>Jack Chen
+          <strong>Post author:  </strong>Jack Chen</a>
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
-          <a href="/2019/02/14/Hello-world-in-c/" target="_blank" title="Hello World In C++">http://yoursite.com/2019/02/14/Hello-world-in-c/</a>
+          <a href="/2019/02/14/Hello-world-in-c/" target="_blank" title="Hello World in C++">https://850075610.github.io/2019/02/14/Hello-world-in-c/</a>
           </li>
           <li class="post-copyright-license">
             <strong>Copyright Notice:   </strong>
@@ -236,7 +246,7 @@
          
         </ul>
 <div>
-</div></div>
+
       
       
         

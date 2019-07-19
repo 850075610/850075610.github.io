@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jack Chen</title>
+  
+  <subtitle>Personal life record</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://850075610.github.io/"/>
+  <updated>2019-02-18T14:05:13.744Z</updated>
+  <id>https://850075610.github.io/</id>
+  
+  <author>
+    <name>Jack Chen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World in C++</title>
+    <link href="https://850075610.github.io/2019/02/14/Hello-world-in-c/"/>
+    <id>https://850075610.github.io/2019/02/14/Hello-world-in-c/</id>
+    <published>2019-02-14T15:25:14.000Z</published>
+    <updated>2019-02-18T14:05:13.744Z</updated>
+    
+    <content type="html"><![CDATA[<p>When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right now and start our c++ trip! By the way, c++ file extention can be either .cc or .cpp. In the following example we use .cpp extension.</p><p>‘helloworld.cpp’</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Explanation:</p><p>In order to use standard output stream cout, we need </p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure><p>Let’s ignore</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br></pre></td></tr></table></figure><p>for now.</p><p>If you’ve got any programming experience, the main() method is quite easy, as the entry of the program, it tells the program where it should start.</p><p>Now comes our task: <strong>print out “Hello World!”</strong></p><p>It was realized through <strong>standard output stream cout</strong>, as we metioned before.</p><p><strong>endl</strong> means ending this line and the cursor will change to the next line.</p><p><strong>Announcement: all programs are compiled and executed under ubuntu 18.04 for the moment.</strong></p><p>Compile command: </p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ g++ helloworld.cpp -o helloworld</span><br></pre></td></tr></table></figure><p><strong>-o</strong> parameter is for the name of the generated object file ( helloworld in the above command).</p><p>Run:</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./helloworld</span><br></pre></td></tr></table></figure><p><strong>Time to have a try by yourself right now!</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;When someone begins to learn a programming language, normally the first step they start with classical “Hello World!”. Let’s do it right 
+      
+    
+    </summary>
+    
+      <category term="programming language" scheme="https://850075610.github.io/categories/programming-language/"/>
+    
+    
+      <category term="helloworld" scheme="https://850075610.github.io/tags/helloworld/"/>
+    
+      <category term="c++" scheme="https://850075610.github.io/tags/c/"/>
+    
+  </entry>
+  
+</feed>
