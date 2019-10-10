@@ -6,20 +6,20 @@
   <title>brief introduction to git | Jack Chen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="introductionGit">
+  <meta name="keywords" content="Gitintroduction">
   
   
   
   
   <meta name="description" content="什么是 Git？Git 是一个免费和开源的分布式版本控制系统。 为什么要用 Git 以及什么情况下用 Git?Git 的存在给团队开发提供了协同合作的可能性，哪怕是2个人的小团队之间的代码协同。 我也经常听说 GitHub, 它与 Git 之间是什么关系呢？GitHub 号称世界领先软件开发平台，经常被戏称为“大型同性交友平台/社区”，本质上是一个代码仓库，与其功能类似还有比如 GitBucket">
-<meta name="keywords" content="introduction,Git">
+<meta name="keywords" content="Git,introduction">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Brief Introduction to Git">
 <meta property="og:url" content="https://850075610.github.io/2019/10/05/introduction-to-git/index.html">
 <meta property="og:site_name" content="Jack Chen">
 <meta property="og:description" content="什么是 Git？Git 是一个免费和开源的分布式版本控制系统。 为什么要用 Git 以及什么情况下用 Git?Git 的存在给团队开发提供了协同合作的可能性，哪怕是2个人的小团队之间的代码协同。 我也经常听说 GitHub, 它与 Git 之间是什么关系呢？GitHub 号称世界领先软件开发平台，经常被戏称为“大型同性交友平台/社区”，本质上是一个代码仓库，与其功能类似还有比如 GitBucket">
 <meta property="og:locale" content="eng, zh-CN">
-<meta property="og:updated_time" content="2019-10-06T16:39:08.995Z">
+<meta property="og:updated_time" content="2019-10-10T18:01:19.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Brief Introduction to Git">
 <meta name="twitter:description" content="什么是 Git？Git 是一个免费和开源的分布式版本控制系统。 为什么要用 Git 以及什么情况下用 Git?Git 的存在给团队开发提供了协同合作的可能性，哪怕是2个人的小团队之间的代码协同。 我也经常听说 GitHub, 它与 Git 之间是什么关系呢？GitHub 号称世界领先软件开发平台，经常被戏称为“大型同性交友平台/社区”，本质上是一个代码仓库，与其功能类似还有比如 GitBucket">
@@ -256,7 +256,7 @@
 </blockquote>
 <p>执行完这个命令之后，刷新你远程的代码仓库按理说已经可以看到你最新的提交了，前提你有对于这个仓库的<a href="https://stackoverflow.com/questions/17442930/can-anybody-push-to-my-project-on-github" target="_blank" rel="noopener">代码提交权限</a>。</p>
 <h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a><a href="https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head" target="_blank" rel="noopener">git reset</a></h2><p>使用 git 的过程中一个潜在可能的需求是我想彻底放弃我本地对于代码的改变，因为我改的太乱了。。。这时这个命令就很有帮助了：</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line">git reset --hard origin/想同步的远程分支（例如，master）</span><br></pre></td></tr></table></figure>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch origin</span><br><span class="line">$ git reset --hard origin/想同步的远程分支（例如，master）</span><br></pre></td></tr></table></figure>
 
 <h2 id="git-checkout"><a href="#git-checkout" class="headerlink" title="git checkout"></a><a href="https://git-scm.com/docs/git-checkout" target="_blank" rel="noopener">git checkout</a></h2><blockquote>
 <p>git-checkout - Switch branches or restore working tree files</p>
