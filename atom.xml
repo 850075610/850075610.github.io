@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://850075610.github.io/"/>
-  <updated>2019-10-10T18:01:19.519Z</updated>
+  <updated>2019-11-09T15:18:00.955Z</updated>
   <id>https://850075610.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Operator Overloading</title>
+    <link href="https://850075610.github.io/2019/11/09/Operator-overloading/"/>
+    <id>https://850075610.github.io/2019/11/09/Operator-overloading/</id>
+    <published>2019-11-09T15:00:22.000Z</published>
+    <updated>2019-11-09T15:18:00.955Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是运算符重载？"><a href="#什么是运算符重载？" class="headerlink" title="什么是运算符重载？"></a>什么是运算符重载？</h1><p>直接上例子给个对比：<br>运行这段 Python 代码：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="string">"""docstring for Test"""</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        super(Test, self).__init__()</span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    <span class="comment"># def __str__(self):</span></span><br><span class="line">    <span class="comment">#     return str(len(self.name))</span></span><br><span class="line"></span><br><span class="line">me = Test(<span class="string">'sharer'</span>)</span><br><span class="line">print(str(me))</span><br></pre></td></tr></table></figure><p>输出结果应该是类似于：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;__main__.Test object <span class="built_in">at</span> <span class="number">0</span>x7f30b98a4450&gt;</span><br></pre></td></tr></table></figure><p>去掉注释再运行，结果应该是：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span></span><br></pre></td></tr></table></figure><p>注释部分代码就是运算符重载的一个例子，重载了__str__() in python, 重载为打印 object 的 ‘name’(参数)的长度，可以理解为重新定义了__str__() 方法。</p><p>参考链接：</p><p><a href="https://www.quora.com/What-is-the-use-of-__str__-in-python" target="_blank" rel="noopener">What is the use of <strong>str</strong>() in python?</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是运算符重载？&quot;&gt;&lt;a href=&quot;#什么是运算符重载？&quot; class=&quot;headerlink&quot; title=&quot;什么是运算符重载？&quot;&gt;&lt;/a&gt;什么是运算符重载？&lt;/h1&gt;&lt;p&gt;直接上例子给个对比：&lt;br&gt;运行这段 Python 代码：&lt;/p&gt;
+&lt;figure 
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://850075610.github.io/categories/programming/"/>
+    
+    
+      <category term="Operator overloading" scheme="https://850075610.github.io/tags/Operator-overloading/"/>
+    
+  </entry>
   
   <entry>
     <title>Brief Introduction to Git</title>
