@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://850075610.github.io/"/>
-  <updated>2019-11-09T15:18:00.955Z</updated>
+  <updated>2020-03-20T10:37:36.323Z</updated>
   <id>https://850075610.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Change File Extension Using Python</title>
+    <link href="https://850075610.github.io/2020/03/20/change-file-extension-using-python/"/>
+    <id>https://850075610.github.io/2020/03/20/change-file-extension-using-python/</id>
+    <published>2020-03-20T09:52:57.000Z</published>
+    <updated>2020-03-20T10:37:36.323Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Python-实现批量更改文件扩展名"><a href="#Python-实现批量更改文件扩展名" class="headerlink" title="Python 实现批量更改文件扩展名"></a>Python 实现批量更改文件扩展名</h1><h2 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h2><p>昨晚为了腾手机空间，就把手机上的照片都导出到了 <strong>win10</strong> 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “<strong><em>人生苦短，我用 python</em></strong>”，代码如下（已在 <em>win10, python3</em> 下测试过）：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> ntpath</span><br><span class="line"><span class="keyword">from</span> os <span class="keyword">import</span> listdir</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> isfile, join</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rename_file</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path.endswith(<span class="string">'.jpg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'jpeg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'.py'</span>):</span><br><span class="line">        print(<span class="string">f"original name = <span class="subst">&#123;path&#125;</span>"</span>)</span><br><span class="line">        new_name = path + <span class="string">'.jpg'</span></span><br><span class="line">        print(<span class="string">f"new name = <span class="subst">&#123;new_name&#125;</span>"</span>)</span><br><span class="line">        os.rename(path, new_name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># get path</span></span><br><span class="line">    dir_path = os.path.dirname(os.path.realpath(__file__))</span><br><span class="line">    <span class="comment"># print(rename_file(dir_path))</span></span><br><span class="line">    <span class="comment"># get all files in the path</span></span><br><span class="line">    onlyfiles = [f <span class="keyword">for</span> f <span class="keyword">in</span> listdir(dir_path) <span class="keyword">if</span> isfile(join(dir_path, f))]</span><br><span class="line">    <span class="comment"># print(onlyfiles)</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> onlyfiles:</span><br><span class="line">        <span class="comment"># print(file)</span></span><br><span class="line">        rename_file(file)</span><br></pre></td></tr></table></figure><p>Now time for you to have a try!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Python-实现批量更改文件扩展名&quot;&gt;&lt;a href=&quot;#Python-实现批量更改文件扩展名&quot; class=&quot;headerlink&quot; title=&quot;Python 实现批量更改文件扩展名&quot;&gt;&lt;/a&gt;Python 实现批量更改文件扩展名&lt;/h1&gt;&lt;h2 id=&quot;需
+      
+    
+    </summary>
+    
+    
+      <category term="python, tool" scheme="https://850075610.github.io/tags/python-tool/"/>
+    
+  </entry>
   
   <entry>
     <title>Operator Overloading</title>

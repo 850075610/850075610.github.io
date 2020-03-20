@@ -3,23 +3,26 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>archives: 2019/10 | Jack Chen</title>
+  <title>change file extension using python | Jack Chen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="python, tool">
   
   
   
-  <meta name="description" content="personal blog">
-<meta name="keywords" content="computer science, English">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jack Chen">
-<meta property="og:url" content="https://850075610.github.io/archives/2019/10/index.html">
+  
+  <meta name="description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
+<meta name="keywords" content="python, tool">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Change File Extension Using Python">
+<meta property="og:url" content="https://850075610.github.io/2020/03/20/change-file-extension-using-python/index.html">
 <meta property="og:site_name" content="Jack Chen">
-<meta property="og:description" content="personal blog">
+<meta property="og:description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
 <meta property="og:locale" content="eng, zh-CN">
+<meta property="og:updated_time" content="2020-03-20T10:37:36.323Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jack Chen">
-<meta name="twitter:description" content="personal blog">
+<meta name="twitter:title" content="Change File Extension Using Python">
+<meta name="twitter:description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
   
     <link rel="alternate" href="/atom.xml" title="Jack Chen" type="application/atom+xml">
   
@@ -60,8 +63,6 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css">
-  
   
   
 
@@ -69,7 +70,7 @@
 </html>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -92,7 +93,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                 >
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
               </a>
             
@@ -161,185 +162,129 @@
             
       <div id="content" class="outer">
         
-          <section id="main">
-  <div class="archives-tags-wrap"><blockquote><span>There are 4 posts in total till now.</span></blockquote>
-
-
-<!-- 分页显示 -->
-
-	
-	
-		
-		
-		  
-		  
-		  <section class="archives-wrap">
-		    <div class="archive-year-wrap">
-		      <h1><a href="/archives/2019" class="archive-year">2019</a></h1>
-		    </div>
-		    <div class="archives">
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2019/10/05/introduction-to-git/" class="archive-article-date">
-	  <time datetime="2019-10-05T20:46:09.000Z" itemprop="datePublished">2019-10-05</time>
-	</a>
-
-      
+          <section id="main" style="float:none;"><article id="post-change-file-extension-using-python" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/10/05/introduction-to-git/">Brief Introduction to Git</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Change File Extension Using Python
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/03/20/change-file-extension-using-python/" class="article-date">
+	  <time datetime="2020-03-20T09:52:57.000Z" itemprop="datePublished">2020-03-20</time>
+	</a>
+
+      
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-实现批量更改文件扩展名"><a href="#Python-实现批量更改文件扩展名" class="headerlink" title="Python 实现批量更改文件扩展名"></a>Python 实现批量更改文件扩展名</h1><h2 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h2><p>昨晚为了腾手机空间，就把手机上的照片都导出到了 <strong>win10</strong> 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “<strong><em>人生苦短，我用 python</em></strong>”，代码如下（已在 <em>win10, python3</em> 下测试过）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> ntpath</span><br><span class="line"><span class="keyword">from</span> os <span class="keyword">import</span> listdir</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> isfile, join</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rename_file</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path.endswith(<span class="string">'.jpg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'jpeg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'.py'</span>):</span><br><span class="line">        print(<span class="string">f"original name = <span class="subst">&#123;path&#125;</span>"</span>)</span><br><span class="line">        new_name = path + <span class="string">'.jpg'</span></span><br><span class="line">        print(<span class="string">f"new name = <span class="subst">&#123;new_name&#125;</span>"</span>)</span><br><span class="line">        os.rename(path, new_name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># get path</span></span><br><span class="line">    dir_path = os.path.dirname(os.path.realpath(__file__))</span><br><span class="line">    <span class="comment"># print(rename_file(dir_path))</span></span><br><span class="line">    <span class="comment"># get all files in the path</span></span><br><span class="line">    onlyfiles = [f <span class="keyword">for</span> f <span class="keyword">in</span> listdir(dir_path) <span class="keyword">if</span> isfile(join(dir_path, f))]</span><br><span class="line">    <span class="comment"># print(onlyfiles)</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> onlyfiles:</span><br><span class="line">        <span class="comment"># print(file)</span></span><br><span class="line">        rename_file(file)</span><br></pre></td></tr></table></figure>
+
+<p>Now time for you to have a try!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>Post author:  </strong>Jack Chen</a>
+          </li>
+          <li class="post-copyright-link">
+          <strong>Post link:  </strong>
+          <a href="/2020/03/20/change-file-extension-using-python/" target="_blank" title="Change File Extension Using Python">https://850075610.github.io/2020/03/20/change-file-extension-using-python/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>Copyright Notice:   </strong>
+            All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            unless stating additionally.
+          </li>
+         
+        </ul>
+<div>
+
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-tool/">python, tool</a></li></ul>
+
+      
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/09/Operator-overloading/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Operator Overloading</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-	
-	
-		</div></section>
-	
 
-	<!-- 页数指示器 -->
-	
+<!-- Table of Contents -->
 
-
-
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-实现批量更改文件扩展名"><span class="nav-number">1.</span> <span class="nav-text">Python 实现批量更改文件扩展名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求描述"><span class="nav-number">1.1.</span> <span class="nav-text">需求描述</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
 
 </section>
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Connect</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">   
-    	
-          
-     			  <li><a href="https://github.com/850075610" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="" title="Flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-            <li><a href="mailto:mingzec@gmail.com?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
-          
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming-language/">programming language</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Operator-overloading/">Operator overloading</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/">c++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/helloworld/">helloworld</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/introduction/">introduction</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python-tool/">python, tool</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Operator-overloading/" style="font-size: 10px;">Operator overloading</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/helloworld/" style="font-size: 10px;">helloworld</a> <a href="/tags/introduction/" style="font-size: 10px;">introduction</a> <a href="/tags/python-tool/" style="font-size: 10px;">python, tool</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/03/20/change-file-extension-using-python/">Change File Extension Using Python</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/09/Operator-overloading/">Operator Overloading</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/05/introduction-to-git/">Brief Introduction to Git</a>
-          </li>
-        
-          <li>
-            <a href="/2019/02/14/Hello-world-in-c/">Hello World in C++</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
       
@@ -435,6 +380,8 @@
 
 
 
+  <script src="/js/dialog.js"></script>
+
 
 
 
@@ -518,6 +465,8 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
