@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://850075610.github.io/"/>
-  <updated>2020-03-20T10:37:36.323Z</updated>
+  <updated>2020-07-07T11:57:38.942Z</updated>
   <id>https://850075610.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Eliminate Line Number of Code Copied From Website Using Regex</title>
+    <link href="https://850075610.github.io/2020/07/07/Eliminate-line-number-of-code-copied-from-website-using-regex/"/>
+    <id>https://850075610.github.io/2020/07/07/Eliminate-line-number-of-code-copied-from-website-using-regex/</id>
+    <published>2020-07-07T11:03:00.000Z</published>
+    <updated>2020-07-07T11:57:38.942Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h1><p>A problem you will encouter is that when you are reading a post from the website like <a href="https://www.oracle.com/technical-resources/articles/java/serializationapi.html" target="_blank" rel="noopener">serializationapi tutorial from oracle</a> and want to run the code in your IDE, e.g. eclipse, after pasting you will find the copied code contains line number which is annoying and you don’t have to delete them manually, which is time wasting. Now it’s time for regex.</p><p>So usually the line number can be in the form of: at least 1 digit.</p><p>As for the number in aforementioned post, the line numbers are like: at least 2 digits (with 0 at the end), so what does the corresponding regex look like?</p><p>^(?=(.*\d){2})[0-9]{2,}</p><p>^(?=(.*\d){2}) - uses lookahead (?=) and says the string must contain at least 2 digits<br>[0-9] - dictates the allowed characters, only digits in our scenario<br>{2,} - says the matching string must be at least 2 characters long</p><p>So time for you to have a try.</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><p><a href="https://cheatography.com/davechild/cheat-sheets/regular-expressions/" target="_blank" rel="noopener">cheat sheet for regex</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Problem-Description&quot;&gt;&lt;a href=&quot;#Problem-Description&quot; class=&quot;headerlink&quot; title=&quot;Problem Description&quot;&gt;&lt;/a&gt;Problem Description&lt;/h1&gt;&lt;p&gt;A 
+      
+    
+    </summary>
+    
+      <category term="regex" scheme="https://850075610.github.io/categories/regex/"/>
+    
+    
+      <category term="regex" scheme="https://850075610.github.io/tags/regex/"/>
+    
+  </entry>
   
   <entry>
     <title>Change File Extension Using Python</title>
