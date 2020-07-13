@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://850075610.github.io/"/>
-  <updated>2020-07-07T11:57:38.942Z</updated>
+  <updated>2020-07-13T14:57:31.491Z</updated>
   <id>https://850075610.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to Extract Text From a PDF File and Write to a Word File Using Python?</title>
+    <link href="https://850075610.github.io/2020/07/13/How-to-extract-text-from-a-PDF-file/"/>
+    <id>https://850075610.github.io/2020/07/13/How-to-extract-text-from-a-PDF-file/</id>
+    <published>2020-07-13T14:36:52.000Z</published>
+    <updated>2020-07-13T14:57:31.491Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Requirement-description"><a href="#Requirement-description" class="headerlink" title="Requirement description"></a>Requirement description</h1><p>You’ve got a pdf file and want to extract only the text out without images and write the extracted text to a word file, there can be at least two choices:</p><ol><li>select all, copy and paste</li><li>Using python</li></ol><p>So let’s talk about the 2nd. scenario. We are going to use 2 libraries: PyPDF2 and docx, be aware that they’re case sensitive, can be installed using</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install (corresponding library)</span><br></pre></td></tr></table></figure><p>After installation, we can start:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PyPDF2</span><br><span class="line"><span class="keyword">import</span> docx</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    pdfFileObj = open(<span class="string">'Cap8.pdf'</span>, <span class="string">'rb'</span>)</span><br><span class="line">    doc = docx.Document()</span><br><span class="line">    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)</span><br><span class="line">    pages = pdfReader.numPages</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> range(pages):</span><br><span class="line">        pageObj = pdfReader.getPage(p)</span><br><span class="line">        txt = pageObj.extractText()</span><br><span class="line">        print(txt)</span><br><span class="line">        <span class="comment"># Here you can do some extra work like using regex to filter the text results you wanted</span></span><br><span class="line">        <span class="comment"># print(pageObj.extractText())</span></span><br><span class="line">        doc.add_paragraph(pageObj.extractText())</span><br><span class="line">    doc.save(<span class="string">'Cap8.docx'</span>)</span><br><span class="line">    print(<span class="string">f"Save to word finished."</span>)</span><br></pre></td></tr></table></figure><p>Now time for you to have a try!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Requirement-description&quot;&gt;&lt;a href=&quot;#Requirement-description&quot; class=&quot;headerlink&quot; title=&quot;Requirement description&quot;&gt;&lt;/a&gt;Requirement descr
+      
+    
+    </summary>
+    
+    
+      <category term="operation text in PDF and word python" scheme="https://850075610.github.io/tags/operation-text-in-PDF-and-word-python/"/>
+    
+  </entry>
   
   <entry>
     <title>Eliminate Line Number of Code Copied From Website Using Regex</title>
