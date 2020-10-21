@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
   <title>how to extract text from a pdf file and write to a word file using python? | Jack Chen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="operation text in PDF and word python">
+  <meta name="keywords" content="operation text in PDF and word python" />
   
   
   
   
   <meta name="description" content="Requirement descriptionYou’ve got a pdf file and want to extract only the text out without images and write the extracted text to a word file, there can be at least two choices:  select all, copy and">
-<meta name="keywords" content="operation text in PDF and word python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Extract Text From a PDF File and Write to a Word File Using Python?">
 <meta property="og:url" content="https://850075610.github.io/2020/07/13/How-to-extract-text-from-a-PDF-file/index.html">
 <meta property="og:site_name" content="Jack Chen">
 <meta property="og:description" content="Requirement descriptionYou’ve got a pdf file and want to extract only the text out without images and write the extracted text to a word file, there can be at least two choices:  select all, copy and">
-<meta property="og:locale" content="eng, zh-CN">
-<meta property="og:updated_time" content="2020-07-13T14:57:31.491Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-07-13T14:36:52.000Z">
+<meta property="article:modified_time" content="2020-07-13T14:57:31.491Z">
+<meta property="article:author" content="Jack Chen">
+<meta property="article:tag" content="operation text in PDF and word python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to Extract Text From a PDF File and Write to a Word File Using Python?">
-<meta name="twitter:description" content="Requirement descriptionYou’ve got a pdf file and want to extract only the text out without images and write the extracted text to a word file, there can be at least two choices:  select all, copy and">
   
     <link rel="alternate" href="/atom.xml" title="Jack Chen" type="application/atom+xml">
   
@@ -44,30 +44,38 @@
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
 
-  <script src="/js/jquery-3.1.1.min.js"></script>
-  <script src="/js/bootstrap.js"></script>
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/dialog.css">
-  
+    
+<link rel="stylesheet" href="/css/dialog.css">
 
-  
-
-  
-    <link rel="stylesheet" href="/css/header-post.css">
   
 
   
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
   
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
 
 
   <body data-spy="scroll" data-target="#toc" data-offset="50">
@@ -145,7 +153,9 @@
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
+
 <script src="/js/insight.js"></script>
+
 
 </div></li>
             </div>
@@ -204,7 +214,7 @@
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install (corresponding library)</span><br></pre></td></tr></table></figure>
 
 <p>After installation, we can start:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PyPDF2</span><br><span class="line"><span class="keyword">import</span> docx</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    pdfFileObj = open(<span class="string">'Cap8.pdf'</span>, <span class="string">'rb'</span>)</span><br><span class="line">    doc = docx.Document()</span><br><span class="line">    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)</span><br><span class="line">    pages = pdfReader.numPages</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> range(pages):</span><br><span class="line">        pageObj = pdfReader.getPage(p)</span><br><span class="line">        txt = pageObj.extractText()</span><br><span class="line">        print(txt)</span><br><span class="line">        <span class="comment"># Here you can do some extra work like using regex to filter the text results you wanted</span></span><br><span class="line">        <span class="comment"># print(pageObj.extractText())</span></span><br><span class="line">        doc.add_paragraph(pageObj.extractText())</span><br><span class="line">    doc.save(<span class="string">'Cap8.docx'</span>)</span><br><span class="line">    print(<span class="string">f"Save to word finished."</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PyPDF2</span><br><span class="line"><span class="keyword">import</span> docx</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    pdfFileObj = <span class="built_in">open</span>(<span class="string">&#x27;Cap8.pdf&#x27;</span>, <span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">    doc = docx.Document()</span><br><span class="line">    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)</span><br><span class="line">    pages = pdfReader.numPages</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> <span class="built_in">range</span>(pages):</span><br><span class="line">        pageObj = pdfReader.getPage(p)</span><br><span class="line">        txt = pageObj.extractText()</span><br><span class="line">        print(txt)</span><br><span class="line">        <span class="comment"># Here you can do some extra work like using regex to filter the text results you wanted</span></span><br><span class="line">        <span class="comment"># print(pageObj.extractText())</span></span><br><span class="line">        doc.add_paragraph(pageObj.extractText())</span><br><span class="line">    doc.save(<span class="string">&#x27;Cap8.docx&#x27;</span>)</span><br><span class="line">    print(<span class="string">f&quot;Save to word finished.&quot;</span>)</span><br></pre></td></tr></table></figure>
 
 <p>Now time for you to have a try!</p>
 
@@ -260,7 +270,7 @@
       
       
         
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/operation-text-in-PDF-and-word-python/">operation text in PDF and word python</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/operation-text-in-PDF-and-word-python/" rel="tag">operation text in PDF and word python</a></li></ul>
 
       
 
@@ -269,6 +279,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2020/10/21/record/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Online Assessment Record
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/07/Eliminate-line-number-of-code-copied-from-website-using-regex/" id="article-nav-older" class="article-nav-link-wrap">
@@ -379,8 +398,13 @@
 </script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/scripts.js"></script>
@@ -388,7 +412,10 @@
 
 
 
-  <script src="/js/dialog.js"></script>
+
+  
+<script src="/js/dialog.js"></script>
+
 
 
 

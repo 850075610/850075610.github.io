@@ -2,66 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://850075610.github.io/2020/10/21/record/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://850075610.github.io/2020/07/13/How-to-extract-text-from-a-PDF-file/</loc>
     
-    <lastmod>2020-07-13T14:57:31.491Z</lastmod>
+    <lastmod>2020-07-13</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/2020/07/07/Eliminate-line-number-of-code-copied-from-website-using-regex/</loc>
     
-    <lastmod>2020-07-07T11:57:38.942Z</lastmod>
+    <lastmod>2020-07-07</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/2020/03/20/change-file-extension-using-python/</loc>
     
-    <lastmod>2020-03-20T10:37:36.323Z</lastmod>
+    <lastmod>2020-03-20</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/2019/11/09/Operator-overloading/</loc>
     
-    <lastmod>2019-11-09T15:18:00.955Z</lastmod>
+    <lastmod>2019-11-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/2019/10/05/introduction-to-git/</loc>
     
-    <lastmod>2019-10-10T18:01:19.519Z</lastmod>
+    <lastmod>2019-10-10</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/about/me.html</loc>
     
-    <lastmod>2019-10-05T20:41:18.663Z</lastmod>
+    <lastmod>2019-10-05</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/AboutMe/index.html</loc>
     
-    <lastmod>2019-07-19T13:39:19.221Z</lastmod>
+    <lastmod>2019-07-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/aboutme/index.html</loc>
     
-    <lastmod>2019-04-10T13:03:58.371Z</lastmod>
+    <lastmod>2019-04-10</lastmod>
     
   </url>
   
   <url>
     <loc>https://850075610.github.io/2019/02/14/Hello-world-in-c/</loc>
     
-    <lastmod>2019-02-18T14:05:13.744Z</lastmod>
+    <lastmod>2019-02-18</lastmod>
     
+  </url>
+  
+
+  <url>
+    <loc>https://850075610.github.io/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://850075610.github.io/tags/regex/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/helloworld/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/c/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/operation-text-in-PDF-and-word-python/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/Operator-overloading/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/python-tool/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/Git/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/introduction/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/online-assessment/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/tags/python/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://850075610.github.io/categories/regex/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/categories/programming-language/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/categories/programming/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://850075610.github.io/categories/tool/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   
 </urlset>

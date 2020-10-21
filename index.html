@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
   <title>Jack Chen</title>
@@ -10,16 +10,15 @@
   
   
   <meta name="description" content="personal blog">
-<meta name="keywords" content="computer science, English">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jack Chen">
 <meta property="og:url" content="https://850075610.github.io/index.html">
 <meta property="og:site_name" content="Jack Chen">
 <meta property="og:description" content="personal blog">
-<meta property="og:locale" content="eng, zh-CN">
+<meta property="og:locale">
+<meta property="article:author" content="Jack Chen">
+<meta property="article:tag" content="computer science, English">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jack Chen">
-<meta name="twitter:description" content="personal blog">
   
     <link rel="alternate" href="/atom.xml" title="Jack Chen" type="application/atom+xml">
   
@@ -41,28 +40,34 @@
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
 
-  <script src="/js/jquery-3.1.1.min.js"></script>
-  <script src="/js/bootstrap.js"></script>
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/home.css">
-  
-
-  
-
+    <link rel="stylesheet" href="/css/home.css" >
   
 
   
+
+  
+
+  
   
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
 
 
   <body>
@@ -261,6 +266,61 @@
         
           <section id="main" style="float:none;">
   
+    <article id="online-record"  class="article article-type-online" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2020/10/21/record/">Online Assessment Record</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/10/21/record/" class="article-date">
+	  <time datetime="2020-10-21T15:32:36.000Z" itemprop="datePublished">2020-10-21</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/programming-language/">programming language</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          最近听朋友的建议把简历挂在了 BOSS 直聘，然后就偶尔会有 HR 来找我聊聊，然后就做了一个在线的测评，最后一题是编程题，在牛客那个不太好用的黑咕隆咚的输入框。。。
+题目描述给一段话进行词频分析，输出顺序是高频次在前，同频次的按字典序输出，举例：单词， 次数
+然后我用 Python 写了段代码：
+1234567891011121314151617181920212223242526272829303132333435import stringimport sys# requirement...
+        </p>
+        <p class="article-more-link">
+          <a href="/2020/10/21/record/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-How-to-extract-text-from-a-PDF-file"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
@@ -396,8 +456,8 @@ So let’s talk about the 2nd...
     <div class="article-entry" itemprop="articleBody">
       
         <p class="article-excerpt-content">
-          Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）：
-1234567891011121314151617181920212223import osimport ntpathf...
+          Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “**人生苦短，我用 python**”，代码如下（已在 win10, python3 下测试过）：
+123456789101112131415161718192021222324import osimport n...
         </p>
         <p class="article-more-link">
           <a href="/2020/03/20/change-file-extension-using-python/#more">Read More</a>
@@ -450,7 +510,7 @@ So let’s talk about the 2nd...
       
         <p class="article-excerpt-content">
           什么是运算符重载？直接上例子给个对比：运行这段 Python 代码：
-123456789101112class Test(object):    """docstring for Test"""    def __init__(self, name):        super(Test, self).__init__()        self.name = name    # def __str__(self):    #     return str(len(self.name))m...
+123456789101112class Test(object):    &quot;&quot;&quot;docstring for Test&quot;&quot;&quot;    def __init__(self, name):        super(Test, self).__init__()        self.name = name    # def __str__(self):    #  ...
         </p>
         <p class="article-more-link">
           <a href="/2019/11/09/Operator-overloading/#more">Read More</a>
@@ -670,14 +730,22 @@ So let’s talk about the 2nd...
 </script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/scripts.js"></script>
 
 
-  <script src="/js/home.js"></script>
+
+  
+<script src="/js/home.js"></script>
+
 
 
 

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
   <title>change file extension using python | Jack Chen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="python, tool">
+  <meta name="keywords" content="python, tool" />
   
   
   
   
-  <meta name="description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
-<meta name="keywords" content="python, tool">
+  <meta name="description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “**人生苦短，我用 python**”，代码如下（已在 win10, python3 下测试过）： 123456789">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Change File Extension Using Python">
 <meta property="og:url" content="https://850075610.github.io/2020/03/20/change-file-extension-using-python/index.html">
 <meta property="og:site_name" content="Jack Chen">
-<meta property="og:description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
-<meta property="og:locale" content="eng, zh-CN">
-<meta property="og:updated_time" content="2020-03-20T10:37:36.323Z">
+<meta property="og:description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “**人生苦短，我用 python**”，代码如下（已在 win10, python3 下测试过）： 123456789">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-03-20T09:52:57.000Z">
+<meta property="article:modified_time" content="2020-03-20T10:37:36.323Z">
+<meta property="article:author" content="Jack Chen">
+<meta property="article:tag" content="python, tool">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Change File Extension Using Python">
-<meta name="twitter:description" content="Python 实现批量更改文件扩展名需求描述昨晚为了腾手机空间，就把手机上的照片都导出到了 win10 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “人生苦短，我用 python”，代码如下（已在 win10, python3 下测试过）： 1234567891011">
   
     <link rel="alternate" href="/atom.xml" title="Jack Chen" type="application/atom+xml">
   
@@ -44,30 +44,38 @@
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
 
-  <script src="/js/jquery-3.1.1.min.js"></script>
-  <script src="/js/bootstrap.js"></script>
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/dialog.css">
-  
+    
+<link rel="stylesheet" href="/css/dialog.css">
 
-  
-
-  
-    <link rel="stylesheet" href="/css/header-post.css">
   
 
   
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
   
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
 
 
   <body data-spy="scroll" data-target="#toc" data-offset="50">
@@ -145,7 +153,9 @@
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
+
 <script src="/js/insight.js"></script>
+
 
 </div></li>
             </div>
@@ -195,8 +205,8 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Python-实现批量更改文件扩展名"><a href="#Python-实现批量更改文件扩展名" class="headerlink" title="Python 实现批量更改文件扩展名"></a>Python 实现批量更改文件扩展名</h1><h2 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h2><p>昨晚为了腾手机空间，就把手机上的照片都导出到了 <strong>win10</strong> 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “<strong><em>人生苦短，我用 python</em></strong>”，代码如下（已在 <em>win10, python3</em> 下测试过）：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> ntpath</span><br><span class="line"><span class="keyword">from</span> os <span class="keyword">import</span> listdir</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> isfile, join</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rename_file</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path.endswith(<span class="string">'.jpg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'jpeg'</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">'.py'</span>):</span><br><span class="line">        print(<span class="string">f"original name = <span class="subst">&#123;path&#125;</span>"</span>)</span><br><span class="line">        new_name = path + <span class="string">'.jpg'</span></span><br><span class="line">        print(<span class="string">f"new name = <span class="subst">&#123;new_name&#125;</span>"</span>)</span><br><span class="line">        os.rename(path, new_name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># get path</span></span><br><span class="line">    dir_path = os.path.dirname(os.path.realpath(__file__))</span><br><span class="line">    <span class="comment"># print(rename_file(dir_path))</span></span><br><span class="line">    <span class="comment"># get all files in the path</span></span><br><span class="line">    onlyfiles = [f <span class="keyword">for</span> f <span class="keyword">in</span> listdir(dir_path) <span class="keyword">if</span> isfile(join(dir_path, f))]</span><br><span class="line">    <span class="comment"># print(onlyfiles)</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> onlyfiles:</span><br><span class="line">        <span class="comment"># print(file)</span></span><br><span class="line">        rename_file(file)</span><br></pre></td></tr></table></figure>
+        <h1 id="Python-实现批量更改文件扩展名"><a href="#Python-实现批量更改文件扩展名" class="headerlink" title="Python 实现批量更改文件扩展名"></a>Python 实现批量更改文件扩展名</h1><h2 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h2><p>昨晚为了腾手机空间，就把手机上的照片都导出到了 <strong>win10</strong> 系统，但不知道出了什么 bug, 一些照片的文件扩展名没有了，这样显示的缩略图就不正确了，我尝试手动添加了 2 个，然后显示就一切正常了，但得有好几十张照片都没有扩展名，于是 “**<em>人生苦短，我用 python**</em>”，代码如下（已在 <em>win10, python3</em> 下测试过）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> ntpath</span><br><span class="line"><span class="keyword">from</span> os <span class="keyword">import</span> listdir</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> isfile, join</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rename_file</span>(<span class="params">path</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path.endswith(<span class="string">&#x27;.jpg&#x27;</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">&#x27;jpeg&#x27;</span>) <span class="keyword">and</span> <span class="keyword">not</span> path.endswith(<span class="string">&#x27;.py&#x27;</span>):</span><br><span class="line">        print(<span class="string">f&quot;original name = <span class="subst">&#123;path&#125;</span>&quot;</span>)</span><br><span class="line">        new_name = path + <span class="string">&#x27;.jpg&#x27;</span></span><br><span class="line">        print(<span class="string">f&quot;new name = <span class="subst">&#123;new_name&#125;</span>&quot;</span>)</span><br><span class="line">        os.rename(path, new_name)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># get path</span></span><br><span class="line">    dir_path = os.path.dirname(os.path.realpath(__file__))</span><br><span class="line">    <span class="comment"># print(rename_file(dir_path))</span></span><br><span class="line">    <span class="comment"># get all files in the path</span></span><br><span class="line">    onlyfiles = [f <span class="keyword">for</span> f <span class="keyword">in</span> listdir(dir_path) <span class="keyword">if</span> isfile(join(dir_path, f))]</span><br><span class="line">    <span class="comment"># print(onlyfiles)</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> onlyfiles:</span><br><span class="line">        <span class="comment"># print(file)</span></span><br><span class="line">        rename_file(file)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>Now time for you to have a try!</p>
 
@@ -252,7 +262,7 @@
       
       
         
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-tool/">python, tool</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-tool/" rel="tag">python, tool</a></li></ul>
 
       
 
@@ -288,7 +298,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-实现批量更改文件扩展名"><span class="nav-number">1.</span> <span class="nav-text">Python 实现批量更改文件扩展名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求描述"><span class="nav-number">1.1.</span> <span class="nav-text">需求描述</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-%E5%AE%9E%E7%8E%B0%E6%89%B9%E9%87%8F%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D"><span class="nav-number">1.</span> <span class="nav-text">Python 实现批量更改文件扩展名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">需求描述</span></a></li></ol></li></ol>
     
     </div>
   </aside>
@@ -380,8 +390,13 @@
 </script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/scripts.js"></script>
@@ -389,7 +404,10 @@
 
 
 
-  <script src="/js/dialog.js"></script>
+
+  
+<script src="/js/dialog.js"></script>
+
 
 
 
